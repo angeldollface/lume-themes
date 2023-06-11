@@ -2,15 +2,31 @@
     "themes": [
         {
             "title": "Shiraha",
+            "isRemote": true,
             "imageURL": "https://lume.land/img/showcase/lume_theme_shiraha.webp",
             "description": "A beautful minimalistic theme for the Lume static-site generator.",
             "themeLink": "https://importantimport.github.io/lume_theme_shiraha/"
         },
         {
             "title": "Lume Dark Material",
+            "isRemote": true,
             "imageURL": "https://lume.land/img/showcase/dark_material.webp",
             "description": "A simple material-design inspired theme for the Lume static-site generator.",
             "themeLink": "https://github.com/angeldollface/lume-dark-material/"
+        },
+        {
+            "title": "Simple Wiki Theme",
+            "isRemote": false,
+            "imageURL": "/assets/simple-wiki-theme.png",
+            "description": "Lume theme to create a wiki to store your notes",
+            "themeLink": "https://github.com/lumeland/theme-simple-wiki"
+        },
+        {
+            "title": "Simple Blog Theme",
+            "isRemote": false,
+            "imageURL": "/assets/simple-blog-theme.png",
+            "description": "Lume theme to create a simple blog.",
+            "themeLink": "https://github.com/lumeland/theme-simple-blog"
         }
     ]
 }

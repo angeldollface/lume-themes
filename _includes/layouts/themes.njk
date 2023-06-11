@@ -6,7 +6,11 @@
  <div class="themeColumn">
   {% for item in themes.themes %}
   <div class="theme">
+   {% if item.isRemote %}
    <img class="previewImage" src="{{ item.imageURL }}"/>
+   {% else %}
+   <img class="previewImage" src="{{ site.baseurl}}{{ item.imageURL }}"/>
+   {% endif %}
    <h2 class="themeTitle">{{ item.title }}</h2>
    <p class="themeDescription">{{ item.description }}</p>
    <p class="themeLink">

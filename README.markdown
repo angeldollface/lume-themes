@@ -49,16 +49,18 @@ If you are a theme developer, please follow these steps:
 - 2.) Clone the forked repository to your machine.
 - 3.) I'm assuming you have Deno and Git installed, so add the following lines to `_data/themes.json`:
     - `title`: The title of your theme.
+    - `isRemote`: Are you loading the screenshot from this repo or from a remote URL? If it is local, copy your screenshot to the `assets` directory and set this flag to `false`. The screenshot has to have the size `1200 x 1800`.
     - `imageURL`: The URL to a scrreenshot that showcases your theme.
     - `description`: A description of your theme.
     - `themeLink`: A link that points to a web page that explains how one can get started with your theme.
 
 ```JSON
-"Shiraha": {
-    "title": "Your theme title",
-    "imageURL": "The URL to a screenshot of your theme in action.",
-    "description": "A description of your theme.",
-    "themeLink": "The URL to a link that points to a web page for getting started with your theme."
+{
+    "title": "Simple Blog Theme",
+    "isRemote": false,
+    "imageURL": "/assets/simple-blog-theme.png",
+    "description": "Lume theme to create a simple blog.",
+    "themeLink": "https://github.com/lumeland/theme-simple-blog"
 }
 ```
 
