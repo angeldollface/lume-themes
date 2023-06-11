@@ -1,0 +1,14 @@
+{
+    "Shiraha": {
+        "title": "Shiraha",
+        "imageURL": "https://lume.land/img/showcase/lume_theme_shiraha.webp",
+        "description": "A beautful minimalistic theme for the Lume static-site generator.",
+        "themeLink": "https://importantimport.github.io/lume_theme_shiraha/"
+    },
+    "Lume Dark Material": {
+        "title": "Lume Dark Material",
+        "imageURL": "https://lume.land/img/showcase/dark_material.webp",
+        "description": "A simple material-design inspired theme for the Lume static-site generator.",
+        "themeLink": "https://github.com/angeldollface/lume-dark-material/"
+    }
+}

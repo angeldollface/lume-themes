@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ {% include 'partials/head.njk' %}
+ <body>
+ {% include 'partials/heading.njk' %}
+ <div class="themeColumn">
+  {% for item in site.themes %}
+  <div class="theme">
+   <img class="previewImage" src="{{ item.data.title }}"/>
+   <h2 class="themeTitle">{{ item.data.title }}</h2>
+   <p class="themeDescription">{{ item.data.description }}</p>
+   <p class="themeLink">
+    <a class="themeLink" href="{{ item.data.themeLink }}">
+     {{ site.usageText }}
+    </a>
+   </p>
+  </div>
+ {% endfor %}
+ </div>
+ {% include 'partials/breaker.njk' %}
+ </body>
+</html>

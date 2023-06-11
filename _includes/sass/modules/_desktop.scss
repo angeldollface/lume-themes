@@ -1,0 +1,134 @@
+html {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #131b1f;
+}
+
+div.headingBar {
+    background-color: #131b1f;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #4e5a63;
+    width: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 20px;
+    margin: 0px;
+    font-family: 'Apercu';
+}
+
+div.breaker {
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    left: 0;
+    right: 0;
+}
+
+div.themeColumn{
+    margin: 0 auto;
+    width: 60%;
+    display: block;
+    padding: 0px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+div.theme {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+    margin-left: 0px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+img.previewImage {
+    margin: 0px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    padding: 0px;
+}
+
+h2.themeTitle {
+    font-size: 35px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin: 0px;
+    font-weight: lighter;
+    font-family: 'RobotoFlex';
+}
+
+p.themeDescription {
+    font-size: 25px;
+    color: #95acb8;
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin: 0px;
+    font-weight: lighter;
+    font-family: 'RobotoFlex';
+}
+
+p.themeLink {
+    font-size: 25px;
+    color: #95acb8;
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin: 0px;
+    font-weight: lighter;
+    font-family: 'RobotoFlex';
+}
+
+a.themeLink {
+    padding: 0px;
+    margin: 0px;
+    color: #95acb8;
+    font-size: 25px;
+    font-family: 'RobotoFlex';
+    text-decoration: underline;
+    transition-duration: 0.6s;
+}
+
+a.themeLink:hover {
+    color: #808080;
+}

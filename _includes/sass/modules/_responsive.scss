@@ -1,0 +1,30 @@
+@media screen and (max-width: 800px){    
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+    }
+    div.breaker {
+        height: 30px;
+    }
+    div.themeColumn{
+        width: 90%;
+    }
+    div.theme {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }   
+    h2.themeTitle {
+        font-size: 25px;
+    }
+    p.themeDescription {
+        font-size: 20px;
+    }
+    
+    p.themeLink {
+        font-size: 20px;
+    }
+    a.themeLink {
+        font-size: 20px;
+    }
+}

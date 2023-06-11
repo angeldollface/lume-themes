@@ -1,0 +1,25 @@
+name: LUME CI
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Clone repository
+        uses: actions/checkout@v2
+        
+      - name: Setup Deno environment
+        uses: denoland/setup-deno@v1.1.2
+        with:
+          deno-version: v1.34.1
+          
+      - name: Build main site
+        run: deno task build
+        
+      - name: "Deploy"
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: _site
