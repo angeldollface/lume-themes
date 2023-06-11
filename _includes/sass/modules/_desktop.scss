@@ -8,7 +8,6 @@ html {
     padding: 0px;
     margin: 0px;
 }
-
 body {
     top: 0;
     right: 0;
@@ -18,15 +17,14 @@ body {
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: #131b1f;
+    background-color: $bgColor;
 }
-
 div.headingBar {
-    background-color: #131b1f;
+    background-color: $bgColor;
     border-right: none;
     border-left: none;
     border-top: none;
-    border-bottom: 1px solid #4e5a63;
+    border-bottom: 1px solid $borderColor;
     width: 100%;
     right: 0;
     top: 0;
@@ -34,16 +32,14 @@ div.headingBar {
     padding: 0px;
     margin: 0px;
 }
-
 h1 {
     font-size: 40px;
-    color: #FFFFFF;
+    color: $headingFontColor;
     text-align: left;
     padding: 20px;
     margin: 0px;
-    font-family: 'Apercu';
+    font-family: $headingFont;
 }
-
 div.breaker {
     width: 100%;
     height: 40px;
@@ -52,7 +48,6 @@ div.breaker {
     left: 0;
     right: 0;
 }
-
 div.themeColumn{
     margin: 0 auto;
     width: 60%;
@@ -61,7 +56,6 @@ div.themeColumn{
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
-
 div.theme {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -71,7 +65,6 @@ div.theme {
     border: none;
     background-color: transparent;
 }
-
 img.previewImage {
     margin: 0px;
     width: 100%;
@@ -79,10 +72,9 @@ img.previewImage {
     border-radius: 15px;
     padding: 0px;
 }
-
 h2.themeTitle {
     font-size: 35px;
-    color: #FFFFFF;
+    color: $headingFontColor;
     text-align: left;
     padding-right: 0px;
     padding-left: 0px;
@@ -90,12 +82,11 @@ h2.themeTitle {
     padding-top: 10px;
     margin: 0px;
     font-weight: lighter;
-    font-family: 'RobotoFlex';
+    font-family: $contentFont;
 }
-
 p.themeDescription {
     font-size: 25px;
-    color: #95acb8;
+    color: $contentFontColor;
     text-align: left;
     padding-right: 0px;
     padding-left: 0px;
@@ -103,12 +94,11 @@ p.themeDescription {
     padding-top: 10px;
     margin: 0px;
     font-weight: lighter;
-    font-family: 'RobotoFlex';
+    font-family: $contentFont;
 }
-
 p.themeLink {
     font-size: 25px;
-    color: #95acb8;
+    color: $contentFontColor;
     text-align: left;
     padding-right: 0px;
     padding-left: 0px;
@@ -116,19 +106,130 @@ p.themeLink {
     padding-top: 10px;
     margin: 0px;
     font-weight: lighter;
-    font-family: 'RobotoFlex';
+    font-family: $contentFont;
 }
-
 a.themeLink {
     padding: 0px;
     margin: 0px;
-    color: #95acb8;
+    color: $contentFontColor;
     font-size: 25px;
-    font-family: 'RobotoFlex';
+    font-family: $contentFont;
     text-decoration: underline;
     transition-duration: 0.6s;
 }
-
 a.themeLink:hover {
-    color: #808080;
+    color: $shadowColor;
+}
+pre {
+    width: 95%;
+    background-color: $codeColor;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    padding: 2%;
+    overflow-x: scroll;
+    box-shadow: 1px 5px 25px $dropShadowColor;
+}
+h2 {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin: 0px;
+    font-size: 35px;
+    font-family: $contentFont;
+    color: $contentFontColor;
+}
+h3 {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin: 0px;
+    font-size: 32px;
+    font-family: $contentFont;
+    color: $contentFontColor;
+
+}
+h4 {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin: 0px;
+    font-size: 29px;
+    font-family: $contentFont;
+    color: $contentFontColor;
+}
+p {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin: 0px;
+    font-size: 25px;
+    font-family: $contentFont;
+    color: $contentFontColor;
+}
+a {
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+    font-family: $contentFont;
+    color: $contentFontColor;
+    transition-duration: 0.6s;
+}
+code {
+    padding: 0px;
+    margin: 0px;
+    font-size: 23px;
+    background-color:$codeColor;
+    font-family: $codeFont;
+    color: $headingFontColor;
+    transition-duration: 0.6s;
+}
+a:hover {
+    color: $shadowColor;
+}
+ul {
+    width: 100%;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    list-style: none;
+}
+li {
+    padding-top: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: $contentFont;
+    color: $contentFontColor;
+}
+li::before {
+    content: $listItemBefore;
+    padding-right: 4px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+a.gitHubLink {
+    font-size: 35px;
+    color: $headingFontColor;
+    padding: 0px;
+    margin: 0px;
+    font-weight: lighter;
+    font-family: $contentFont;
+    text-decoration: underline;
+    transition-duration: 0.6s;
+}
+a.gitHubLink:hover{
+    color: $shadowColor;
 }

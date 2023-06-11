@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ {% include 'partials/head.njk' %}
+ <body>
+ {% include 'partials/heading.njk' %}
+ <div class="themeColumn">
+  {% include 'partials/breaker.njk' %}
+  {% if isRemote %}
+  <img class="previewImage" src="{{ imageURL }}"/>
+  {% else %}
+  <img class="previewImage" src="{{ site.baseurl }}{{ imageURL }}"/>
+  {% endif %}
+  <h2 class="themeTitle">
+   <a class="gitHubLink" href="{{ projectLink }}">
+    {{ title }}
+   </a>
+  </h2>
+  <p class="themeDescription">{{ description }}</p>
+  {% include 'partials/breaker.njk' %}
+  {{ content | safe }}
+ </div>
+ {% include 'partials/breaker.njk' %}
+ </body>
+</html>

@@ -47,30 +47,40 @@ If you are a theme developer, please follow these steps:
 
 - 1.) Fork this repository.
 - 2.) Clone the forked repository to your machine.
-- 3.) I'm assuming you have Deno and Git installed, so add the following lines to `_data/themes.json`:
-    - `title`: The title of your theme.
-    - `isRemote`: Are you loading the screenshot from this repo or from a remote URL? If it is local, copy your screenshot to the `assets` directory and set this flag to `false`. The screenshot has to have the size `1200 x 1800`.
-    - `imageURL`: The URL to a scrreenshot that showcases your theme.
-    - `description`: A description of your theme.
-    - `themeLink`: A link that points to a web page that explains how one can get started with your theme.
+- 3.) I'm assuming you have Deno and Git installed. Make a new file in `/themes` by the name of `YYYY-MM-DD-your-theme-name.markdowmn`.
+- 4.) Fill it with this content:
 
-```JSON
-{
-    "title": "Simple Blog Theme",
-    "isRemote": false,
-    "imageURL": "/assets/simple-blog-theme.png",
-    "description": "Lume theme to create a simple blog.",
-    "themeLink": "https://github.com/lumeland/theme-simple-blog"
-}
+```Markdown
+---
+layout: "layouts/theme.njk"
+title: "Your theme name."
+isRemote: true
+projectLink: "Link to your theme's GitHub repository."
+imageURL: "URL to a showcase of your theme."
+description: "The description for your theme."
+---
+
+## YOUR CONTENT GOES HERE
 ```
 
-- 4.) Edit the `_data/site.json` file and change this line: `"baseurl": ""` to this: `"baseurl": "/lume-themes"`.
+- 5.) Here's a quick explanation of this sample:
+    - `layout`: Do not modify this!
+    - `title`: Your theme's title.
+    - `isRemote`: Is the showcase image for your theme remote or are you storing it in this repo? If you are storing it in this repo, set this flag to `false`. Images go in the `assets` directory and should have a size `1200 x 1800`.
+    - `projectLink`: The link to a GitHub repo of your theme.
+    - `imageURL`: The URL to the screenshot showcasing your theme.
+    - `description`: The description of your theme.
+    - `## YOUR CONTENT GOES HERE.`: Provide instructions on how to get started with your theme!
 
-- 5.) Check whether your theme shows up in the new version of the site by running this command from a terminal session: `deno task serve`. You can view the result on [localhost:3000](http://localhost:3000).
+- 6.) Change the line in `_data/site.json` that goes like this: `"baseurl": ""` to this: `"baseurl": "/lume-themes"`.
 
-- 6.) If all is well, commit and push your changes. If not, make the neccessary adjustments.
+- 7.) Run `deno task serve` and visit [localhost:3000](https://localhost:3000).
 
-- 7.) File a Pull Request! If everything works and the GitHub Action passes, I'll merge it with the main repo (this one).
+- 8.) If everything is OK, change the "baseurl" variable to what it was.
+
+- 9.) Stage, commit, and push your changes.
+
+- 10.) File a Pull Request.
 
 ## CHANGELOG :black_nib:
 

@@ -4,17 +4,21 @@
  <body>
  {% include 'partials/heading.njk' %}
  <div class="themeColumn">
-  {% for item in themes.themes %}
+  {% for item in search.pages("url^=/themes/") %}
   <div class="theme">
-   {% if item.isRemote %}
-   <img class="previewImage" src="{{ item.imageURL }}"/>
+   {% if item.data.isRemote %}
+   <img class="previewImage" src="{{ item.data.imageURL }}"/>
    {% else %}
-   <img class="previewImage" src="{{ site.baseurl}}{{ item.imageURL }}"/>
+   <img class="previewImage" src="{{ site.baseurl}}{{ item.data.imageURL }}"/>
    {% endif %}
-   <h2 class="themeTitle">{{ item.title }}</h2>
-   <p class="themeDescription">{{ item.description }}</p>
+   <h2 class="themeTitle">
+   <a class="gitHubLink" href="{{ item.data.projectLink }}">
+    {{ item.data.title }}
+   </a>
+  </h2>
+   <p class="themeDescription">{{ item.data.description }}</p>
    <p class="themeLink">
-    <a class="themeLink" href="{{ item.themeLink }}">
+    <a class="themeLink" href="{{ item.data.url }}">
      {{ site.usageText }}
     </a>
    </p>
