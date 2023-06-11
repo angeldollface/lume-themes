@@ -4,11 +4,11 @@
  <body>
  {% include 'partials/heading.njk' %}
  <div class="themeColumn">
-  {% for item in site.themes %}
+  {% for item in themes.themes %}
   <div class="theme">
-   <img class="previewImage" src="{{ item.data.title }}"/>
+   <img class="previewImage" src="{{ item.data.imageURL }}"/>
    <h2 class="themeTitle">{{ item.data.title }}</h2>
-   <p class="themeDescription">{{ item.data.description }}</p>
+   <p class="themeDescription">{{ item.data.themeDescription }}</p>
    <p class="themeLink">
     <a class="themeLink" href="{{ item.data.themeLink }}">
      {{ site.usageText }}
