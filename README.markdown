@@ -20,13 +20,13 @@ To learn how to use this repository on your own machine follow these steps:
 - 1.) Clone this project's source code:
 
 ```bash
-git clone https://github.com/angeldollface/lume-dark-material/
+git clone https://github.com/angeldollface/lume-themes/
 ```
 
 - 2.) Change directory into the source code's root directory:
 
 ```bash
-cd lume-dark-material
+cd lume-themes
 ```
 
 - 3.) Serve the built static site on `localhost`:
