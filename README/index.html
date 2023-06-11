@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<h1>LUME THEMES :fire: :art:</h1>
+<p><a href="https://github.com/angeldollface/lume-themes/actions/workflows/main.yml"><img src="https://github.com/angeldollface/lume-themes/actions/workflows/main.yml/badge.svg" alt="LUME CI"></a></p>
+<p><em><strong>The official repository for the official web index of Lume themes! :fire: :art:</strong></em></p>
+<h2>ABOUT :books:</h2>
+<p>Since <a href="https://github.com/oscarotero">@oscarotero</a> created <a href="https://lume.land">Lume</a>, a static-site generator and people have been creating themes for this static-site generator, I thought it would be good to have a central website for traversing and looking for themes. This repository contains the source code for this website. This website is also a <a href="https://lume.land">Lume</a>-powered site.</p>
+<h2>USAGE :hammer:</h2>
+<p>To try this site on your own machine, you should have the following tools installed and available from the command line:</p>
+<ul>
+<li><a href="https://deno.land">Deno</a></li>
+<li><a href="https://git-scm.org">Git</a></li>
+</ul>
+<p>To learn how to use this repository on your own machine follow these steps:</p>
+<ul>
+<li>1.) Clone this project's source code:</li>
+</ul>
+<pre><code class="language-bash">git clone https://github.com/angeldollface/lume-dark-material/
+</code></pre>
+<ul>
+<li>2.) Change directory into the source code's root directory:</li>
+</ul>
+<pre><code class="language-bash">cd lume-dark-material
+</code></pre>
+<ul>
+<li>3.) Serve the built static site on <code>localhost</code>:</li>
+</ul>
+<pre><code class="language-bash">deno task serve
+</code></pre>
+<ul>
+<li>4.) If you want to compile this blog, use this command:</li>
+</ul>
+<pre><code class="language-bash">deno task build
+</code></pre>
+<h2>FOR THEME DEVELOPERS :art:</h2>
+<p>If you are a theme developer, please follow these steps:</p>
+<ul>
+<li>1.) Fork this repository.</li>
+<li>2.) Clone the forked repository to your machine.</li>
+<li>3.) I'm assuming you have Deno and Git installed, so add the following lines to <code>_data/themes.json</code>:
+<ul>
+<li><code>title</code>: The title of your theme.</li>
+<li><code>imageURL</code>: The URL to a scrreenshot that showcases your theme.</li>
+<li><code>description</code>: A description of your theme.</li>
+<li><code>themeLink</code>: A link that points to a web page that explains how one can get started with your theme.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-JSON">&quot;Shiraha&quot;: {
+    &quot;title&quot;: &quot;Your theme title&quot;,
+    &quot;imageURL&quot;: &quot;The URL to a screenshot of your theme in action.&quot;,
+    &quot;description&quot;: &quot;A description of your theme.&quot;,
+    &quot;themeLink&quot;: &quot;The URL to a link that points to a web page for getting started with your theme.&quot;
+}
+</code></pre>
+<ul>
+<li>
+<p>4.) Edit the <code>_data/site.json</code> file and change this line: <code>&quot;baseurl&quot;: &quot;&quot;</code> to this: <code>&quot;baseurl&quot;: &quot;/lume-themes&quot;</code>.</p>
+</li>
+<li>
+<p>5.) Check whether your theme shows up in the new version of the site by running this command from a terminal session: <code>deno task serve</code>. You can view the result on <a href="http://localhost:3000">localhost:3000</a>.</p>
+</li>
+<li>
+<p>6.) If all is well, commit and push your changes. If not, make the neccessary adjustments.</p>
+</li>
+<li>
+<p>7.) File a Pull Request! If everything works and the GitHub Action passes, I'll merge it with the main repo (this one).</p>
+</li>
+</ul>
+<h2>CHANGELOG :black_nib:</h2>
+<h3>Version 1.0.0</h3>
+<ul>
+<li>Initial release.</li>
+<li>Upload to GitHub.</li>
+<li>Deployment to GitHub Pages.</li>
+</ul>
+<h2>NOTE :scroll:</h2>
+<ul>
+<li><em>Lume Themes :fire: :art:</em> by Alexander Abraham :black_heart: a.k.a. <em>&quot;Angel Dollface&quot; :dolls: :ribbon:</em></li>
+<li>Licensed under the MIT license.</li>
+</ul>
