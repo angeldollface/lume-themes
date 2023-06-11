@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html><head>
+ <title>LUME THEMES</title>
+ <meta name="description" content="The official collection of all themes for the Lume static-site generator.">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://lume.land/favicon.ico" rel="icon" type="image/x-icon">
+ <link rel="stylesheet" type="text/css" href="/lume-themes/css/index.css">
+ <link href="https://lume.land/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+ <link href="https://lume.land/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+ <link href="https://lume.land/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+ <link rel="stylesheet" type="text/css" href="https://angeldollface.art/doll-cdn/css/dollfonts.css">
+</head>
+ <body>
+ <div class="headingBar">
+  <h1>LUME THEMES</h1>
+ </div>
+ <div class="themeColumn">
+  <div class="breaker"></div>
+  
+  <img class="previewImage" src="/lume-themes/assets/simple-blog-theme.png">
+  
+  <h2 class="themeTitle">
+   <a class="gitHubLink" href="https://github.com/lumeland/theme-simple-blog">
+    Simple Blog Theme
+   </a>
+  </h2>
+  <p class="themeDescription">Lume theme to create a simple blog.</p>
+  <div class="breaker"></div>
+  <h2>Simple Blog</h2>
+<p><a href="https://lume.land">Lume</a> theme to create a simple blog.</p>
+<ul>
+<li>It supports tags and post authors.</li>
+<li>RSS (Atom and JSON).</li>
+<li>Sitemap and SEO features.</li>
+<li>Instant search engine.</li>
+</ul>
+<h2>Install as remote theme</h2>
+<p>The <strong>fastest and easiest</strong> way to use this theme is by importing it as a remote
+module. It allows to create a blog in seconds and update it at any time just
+changing the version number in the import url. Just add the following code to
+your <code>_config.ts</code> file:</p>
+<pre><code class="language-ts hljs language-typescript"><span class="syntax-keyword">import</span> lume <span class="syntax-keyword">from</span> <span class="syntax-string">"lume/mod.ts"</span>;
+<span class="syntax-keyword">import</span> blog <span class="syntax-keyword">from</span> <span class="syntax-string">"https://deno.land/x/lume_theme_simple_blog@v0.5.0/mod.ts"</span>;
+
+<span class="syntax-keyword">const</span> site = <span class="syntax-title function_">lume</span>();
+
+site.<span class="syntax-title function_">use</span>(<span class="syntax-title function_">blog</span>());
+
+<span class="syntax-keyword">export</span> <span class="syntax-keyword">default</span> site;
+</code></pre>
+<p>You can see an example in the <a href="./demo">demo</a> folder. To customize it copy the
+<a href="./src/_data.yml"><code>_data.yml</code></a> file in your blog root folder and edit it with
+your own data. The posts must be saved in the <code>posts</code> folder. For example:
+<code>posts/my-first-posts.md</code>.</p>
+<h2>Use it as base template</h2>
+<p>To use this theme as a base template for a more customized blog, clone this repo
+and edit the <a href="./_config.ts">_config.ts</a> file. The source files are in the
+<a href="./src/">src</a> folder. And you can remove the <code>/demo</code> folder.</p>
+
+ </div>
+ <div class="breaker"></div>
+ 
+</body></html>

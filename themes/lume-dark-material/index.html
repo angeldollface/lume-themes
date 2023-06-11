@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html><head>
+ <title>LUME THEMES</title>
+ <meta name="description" content="The official collection of all themes for the Lume static-site generator.">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://lume.land/favicon.ico" rel="icon" type="image/x-icon">
+ <link rel="stylesheet" type="text/css" href="/lume-themes/css/index.css">
+ <link href="https://lume.land/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+ <link href="https://lume.land/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+ <link href="https://lume.land/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+ <link rel="stylesheet" type="text/css" href="https://angeldollface.art/doll-cdn/css/dollfonts.css">
+</head>
+ <body>
+ <div class="headingBar">
+  <h1>LUME THEMES</h1>
+ </div>
+ <div class="themeColumn">
+  <div class="breaker"></div>
+  
+  <img class="previewImage" src="https://lume.land/img/showcase/dark_material.webp">
+  
+  <h2 class="themeTitle">
+   <a class="gitHubLink" href="https://github.com/angeldollface/lume-dark-material/">
+    Lume Dark Material
+   </a>
+  </h2>
+  <p class="themeDescription">A simple material-design inspired theme for the Lume static-site generator.</p>
+  <div class="breaker"></div>
+  <h2>Usage</h2>
+<p>To get started with this theme, start a new Lume site! After that is done, make sure you add the import for <em>Lume Darkj Material</em> to your <code>_config.ts</code>.
+This might look something like this:</p>
+<pre><code class="language-Typescript hljs"><span class="syntax-keyword">import</span> lume <span class="syntax-keyword">from</span> <span class="syntax-string">"lume/mod.ts"</span>;
+<span class="syntax-keyword">import</span> blog <span class="syntax-keyword">from</span> <span class="syntax-string">"https://raw.githubusercontent.com/angeldollface/lume-dark-material/main/mod.ts"</span>;
+
+<span class="syntax-keyword">const</span> site = <span class="syntax-title function_">lume</span>();
+
+site.<span class="syntax-title function_">use</span>(<span class="syntax-title function_">blog</span>());
+
+<span class="syntax-keyword">export</span> <span class="syntax-keyword">default</span> site;
+</code></pre>
+<p>The project's repository, which can be found <a href="">here</a>, has extra resources in the form of a "demo" project which has the bare minimum for you to get started with <em>Lume Dark Material</em>. A link to that is <a href="">here</a></p>
+<p>If you want to customize your colors or styles, that can also be done. You must create a directory called <code>css</code> in the root of your Lume site and create a file called <code>index.scss</code>.</p>
+<p>The colors are customizable by changing the variables to fonts and colors.
+Here is what the <code>index.scss</code> of <em>Lume Dark Material</em> looks like:</p>
+<pre><code class="language-SCSS hljs"><span class="syntax-variable">$dropShadowColor</span>: <span class="syntax-number">#111111</span>;
+<span class="syntax-variable">$backgroundColor</span>: <span class="syntax-number">#B399D4</span>;
+<span class="syntax-variable">$accentColor</span>: <span class="syntax-number">#FFFFFF</span>;
+<span class="syntax-variable">$contrastColor</span>: <span class="syntax-number">#000000</span>;
+<span class="syntax-variable">$hoverColor</span>: <span class="syntax-number">#808080</span>;
+
+<span class="syntax-variable">$mainFont</span>: <span class="syntax-string">'SymbolFont'</span>;
+<span class="syntax-variable">$contentFont</span>: <span class="syntax-string">'FiraCode-Regular'</span>;
+
+<span class="syntax-keyword">@import</span> <span class="syntax-string">'sass/lume-dark-material'</span>;
+</code></pre>
+<h2>Features</h2>
+<ul>
+<li>Multiple options for customization.</li>
+<li>SEO</li>
+<li>Minimalist, clean design.</li>
+<li>Nothing that isn't needed is added.</li>
+</ul>
+
+ </div>
+ <div class="breaker"></div>
+ 
+</body></html>

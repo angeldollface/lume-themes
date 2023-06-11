@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<h1>LUME THEMES :fire: :art:</h1>
+<html><head></head><body><h1>LUME THEMES :fire: :art:</h1>
 <p><a href="https://github.com/angeldollface/lume-themes/actions/workflows/main.yml"><img src="https://github.com/angeldollface/lume-themes/actions/workflows/main.yml/badge.svg" alt="LUME CI"></a></p>
 <p><em><strong>The official repository for the official web index of Lume themes! :fire: :art:</strong></em></p>
 <h2>ABOUT :books:</h2>
@@ -14,58 +14,69 @@
 <ul>
 <li>1.) Clone this project's source code:</li>
 </ul>
-<pre><code class="language-bash">git clone https://github.com/angeldollface/lume-themes/
+<pre><code class="language-bash hljs">git <span class="syntax-built_in">clone</span> https://github.com/angeldollface/lume-themes/
 </code></pre>
 <ul>
 <li>2.) Change directory into the source code's root directory:</li>
 </ul>
-<pre><code class="language-bash">cd lume-themes
+<pre><code class="language-bash hljs"><span class="syntax-built_in">cd</span> lume-themes
 </code></pre>
 <ul>
 <li>3.) Serve the built static site on <code>localhost</code>:</li>
 </ul>
-<pre><code class="language-bash">deno task serve
+<pre><code class="language-bash hljs">deno task serve
 </code></pre>
 <ul>
 <li>4.) If you want to compile this blog, use this command:</li>
 </ul>
-<pre><code class="language-bash">deno task build
+<pre><code class="language-bash hljs">deno task build
 </code></pre>
 <h2>FOR THEME DEVELOPERS :art:</h2>
 <p>If you are a theme developer, please follow these steps:</p>
 <ul>
 <li>1.) Fork this repository.</li>
 <li>2.) Clone the forked repository to your machine.</li>
-<li>3.) I'm assuming you have Deno and Git installed, so add the following lines to <code>_data/themes.json</code>:
-<ul>
-<li><code>title</code>: The title of your theme.</li>
-<li><code>isRemote</code>: Are you loading the screenshot from this repo or from a remote URL? If it is local, copy your screenshot to the <code>assets</code> directory and set this flag to <code>false</code>. The screenshot has to have the size <code>1200 x 1800</code>.</li>
-<li><code>imageURL</code>: The URL to a scrreenshot that showcases your theme.</li>
-<li><code>description</code>: A description of your theme.</li>
-<li><code>themeLink</code>: A link that points to a web page that explains how one can get started with your theme.</li>
+<li>3.) I'm assuming you have Deno and Git installed. Make a new file in <code>/themes</code> by the name of <code>YYYY-MM-DD-your-theme-name.markdowmn</code>.</li>
+<li>4.) Fill it with this content:</li>
 </ul>
-</li>
-</ul>
-<pre><code class="language-JSON">{
-    &quot;title&quot;: &quot;Simple Blog Theme&quot;,
-    &quot;isRemote&quot;: false,
-    &quot;imageURL&quot;: &quot;/assets/simple-blog-theme.png&quot;,
-    &quot;description&quot;: &quot;Lume theme to create a simple blog.&quot;,
-    &quot;themeLink&quot;: &quot;https://github.com/lumeland/theme-simple-blog&quot;
-}
+<pre><code class="language-Markdown hljs">---
+layout: "layouts/theme.njk"
+title: "Your theme name."
+isRemote: true
+projectLink: "Link to your theme's GitHub repository."
+imageURL: "URL to a showcase of your theme."
+<span class="syntax-section">description: "The description for your theme."
+---</span>
+
+<span class="syntax-section">## YOUR CONTENT GOES HERE</span>
 </code></pre>
 <ul>
 <li>
-<p>4.) Edit the <code>_data/site.json</code> file and change this line: <code>&quot;baseurl&quot;: &quot;&quot;</code> to this: <code>&quot;baseurl&quot;: &quot;/lume-themes&quot;</code>.</p>
+<p>5.) Here's a quick explanation of this sample:</p>
+<ul>
+<li><code>layout</code>: Do not modify this!</li>
+<li><code>title</code>: Your theme's title.</li>
+<li><code>isRemote</code>: Is the showcase image for your theme remote or are you storing it in this repo? If you are storing it in this repo, set this flag to <code>false</code>. Images go in the <code>assets</code> directory and should have a size <code>1200 x 1800</code>.</li>
+<li><code>projectLink</code>: The link to a GitHub repo of your theme.</li>
+<li><code>imageURL</code>: The URL to the screenshot showcasing your theme.</li>
+<li><code>description</code>: The description of your theme.</li>
+<li><code>## YOUR CONTENT GOES HERE.</code>: Provide instructions on how to get started with your theme!</li>
+</ul>
 </li>
 <li>
-<p>5.) Check whether your theme shows up in the new version of the site by running this command from a terminal session: <code>deno task serve</code>. You can view the result on <a href="http://localhost:3000">localhost:3000</a>.</p>
+<p>6.) Change the line in <code>_data/site.json</code> that goes like this: <code>"baseurl": ""</code> to this: <code>"baseurl": "/lume-themes"</code>.</p>
 </li>
 <li>
-<p>6.) If all is well, commit and push your changes. If not, make the neccessary adjustments.</p>
+<p>7.) Run <code>deno task serve</code> and visit <a href="https://localhost:3000">localhost:3000</a>.</p>
 </li>
 <li>
-<p>7.) File a Pull Request! If everything works and the GitHub Action passes, I'll merge it with the main repo (this one).</p>
+<p>8.) If everything is OK, change the "baseurl" variable to what it was.</p>
+</li>
+<li>
+<p>9.) Stage, commit, and push your changes.</p>
+</li>
+<li>
+<p>10.) File a Pull Request.</p>
 </li>
 </ul>
 <h2>CHANGELOG :black_nib:</h2>
@@ -77,6 +88,7 @@
 </ul>
 <h2>NOTE :scroll:</h2>
 <ul>
-<li><em>Lume Themes :fire: :art:</em> by Alexander Abraham :black_heart: a.k.a. <em>&quot;Angel Dollface&quot; :dolls: :ribbon:</em></li>
+<li><em>Lume Themes :fire: :art:</em> by Alexander Abraham :black_heart: a.k.a. <em>"Angel Dollface" :dolls: :ribbon:</em></li>
 <li>Licensed under the MIT license.</li>
 </ul>
+</body></html>
