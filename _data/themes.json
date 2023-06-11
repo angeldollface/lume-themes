@@ -1,9 +1,9 @@
 {
     "themes": [
         {
-            "title": "Shiraha",
+            "title": "Lume Theme Shiraha",
             "imageURL": "https://lume.land/img/showcase/lume_theme_shiraha.webp",
-            "description": "A beautful minimalistic theme for the Lume static-site generator.",
+            "description": "❄️ Material 3-inspired Lume Blog Theme.",
             "themeLink": "https://importantimport.github.io/lume_theme_shiraha/"
         },
         {
