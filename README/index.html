@@ -39,17 +39,19 @@
 <li>3.) I'm assuming you have Deno and Git installed, so add the following lines to <code>_data/themes.json</code>:
 <ul>
 <li><code>title</code>: The title of your theme.</li>
+<li><code>isRemote</code>: Are you loading the screenshot from this repo or from a remote URL? If it is local, copy your screenshot to the <code>assets</code> directory and set this flag to <code>false</code>. The screenshot has to have the size <code>1200 x 1800</code>.</li>
 <li><code>imageURL</code>: The URL to a scrreenshot that showcases your theme.</li>
 <li><code>description</code>: A description of your theme.</li>
 <li><code>themeLink</code>: A link that points to a web page that explains how one can get started with your theme.</li>
 </ul>
 </li>
 </ul>
-<pre><code class="language-JSON">&quot;Shiraha&quot;: {
-    &quot;title&quot;: &quot;Your theme title&quot;,
-    &quot;imageURL&quot;: &quot;The URL to a screenshot of your theme in action.&quot;,
-    &quot;description&quot;: &quot;A description of your theme.&quot;,
-    &quot;themeLink&quot;: &quot;The URL to a link that points to a web page for getting started with your theme.&quot;
+<pre><code class="language-JSON">{
+    &quot;title&quot;: &quot;Simple Blog Theme&quot;,
+    &quot;isRemote&quot;: false,
+    &quot;imageURL&quot;: &quot;/assets/simple-blog-theme.png&quot;,
+    &quot;description&quot;: &quot;Lume theme to create a simple blog.&quot;,
+    &quot;themeLink&quot;: &quot;https://github.com/lumeland/theme-simple-blog&quot;
 }
 </code></pre>
 <ul>
