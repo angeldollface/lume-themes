@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><head>
+ <title>LUME THEMES</title>
+ <meta name="description" content="The official collection of all themes for the Lume static-site generator.">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://lume.land/favicon.ico" rel="icon" type="image/x-icon">
+ <link rel="stylesheet" type="text/css" href="/lume-themes/css/index.css">
+ <link href="https://lume.land/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+ <link href="https://lume.land/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+ <link href="https://lume.land/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+ <link rel="stylesheet" type="text/css" href="https://angeldollface.art/doll-cdn/css/dollfonts.css">
+</head>
+ <body>
+ <div class="headingBar">
+  <h1>LUME THEMES</h1>
+ </div>
+ <div class="themeColumn">
+  <div class="breaker"></div>
+  
+  <img class="previewImage" src="https://lume.land/img/showcase/lume_theme_shiraha.webp">
+  
+  <h2 class="themeTitle">
+   <a class="gitHubLink" href="https://github.com/importantimport/lume_theme_shiraha/">
+    Lume Theme Shiraha
+   </a>
+  </h2>
+  <p class="themeDescription">❄️ Material 3-inspired Lume Blog Theme.</p>
+  <div class="breaker"></div>
+  <h2>Usage</h2>
+<pre><code class="language-ts hljs language-typescript"><span class="syntax-comment">// _config.ts</span>
+<span class="syntax-keyword">import</span> lume <span class="syntax-keyword">from</span> <span class="syntax-string">'lume/mod.ts'</span>
+
+<span class="syntax-comment">// from deno.land/x (stable)</span>
+<span class="syntax-keyword">import</span> lts <span class="syntax-keyword">from</span> <span class="syntax-string">'https://deno.land/x/lume_theme_shiraha/mod.ts'</span>
+
+<span class="syntax-comment">// from deno.land/x (specific version)</span>
+<span class="syntax-comment">// import lts from 'https://deno.land/x/lume_theme_shiraha@0.0.3/mod.ts'</span>
+
+<span class="syntax-comment">// from github (latest)</span>
+<span class="syntax-comment">// import lts from 'https://raw.githubusercontent.com/importantimport/lume_theme_shiraha/main/mod.ts'</span>
+
+<span class="syntax-keyword">export</span> <span class="syntax-keyword">default</span> <span class="syntax-title function_">lume</span>().<span class="syntax-title function_">use</span>(<span class="syntax-title function_">lts</span>())
+</code></pre>
+<h2>Features</h2>
+<h3><a href="https://fff.js.org">FFF Flavored Frontmatter</a></h3>
+<p>Powerful and versatile Frontmatter format. If you were using <a href="https://github.com/importantimport/urara">Urara</a> before, your postings will not require much modification to migrate.</p>
+<h3>Material Design 3 with slight differences</h3>
+<p>This theme gets the Material Design-like styles from <a href="https://github.com/importantimport/shiraha/tree/main/packages/shiraha">Shiraha</a>.</p>
+<h3>Color from featured image</h3>
+<p>Automatically generate theme colors for your articles with featured image through <a href="https://github.com/importantimport/shiraha/tree/main/packages/shiraha-colors">Shiraha Colors</a>.</p>
+<h3>JSON Feed in Everythere</h3>
+<p>Provides a JSON Feed for each list: home, tags, categories... all can be subscribed via the reader.</p>
+<h3>All-in-One, or just templates.</h3>
+<p>Lume Theme Shiraha has a complete set-up for you, including Lume and Remark / Rehype plugin. You can also use just the templates if you wish to customise them yourself.</p>
+<p>All templates use <code>.tmpl.ts</code> and have no additional dependencies.</p>
+<h3>View Transitions</h3>
+<blockquote>
+<p>Currently you need to enable <code>#view-transition-on-navigation</code> manually in chrome://flags.</p>
+</blockquote>
+<p>No need for additional Swup or Pjax, the most native page transition.</p>
+
+ </div>
+ <div class="breaker"></div>
+ 
+</body></html>
